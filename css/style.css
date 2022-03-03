@@ -1,0 +1,16 @@
+@charset "utf-8";
+li{list-style: none;}
+
+.page-main{width: 960px; padding:  0 10px 100px; margin: 0 auto;}
+.page-main .gallery{margin: 0;padding: 0;}
+.gallery-item:nth-child(4n){margin-right: 0;}
+.gallery:after{content: "";display: block; clear: both;}
+.gallery-item{float: left;width: 210px; box-sizing: border-box; margin-top: 10px; background: rgb(200, 255, 249); ;padding: 20px; animation:fadeIn 1s;margin-right: 40px; }
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.gallery-item a{text-align: center; text-decoration: none; color: rgb(79, 202, 202)}
+.gallery-item .is-loading{opacity: 0;}/* 없는 클래스명 */
+.gallery-item img{width: 100%; display: block;}
+.page-main .load-more{width: 100%; padding: 20px; background: rgb(140, 196, 189); color: rgb(40, 109, 109); border: none; border-radius: 3px; display: block; margin-top: 20px;}
