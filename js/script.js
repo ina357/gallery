@@ -52,7 +52,7 @@ function addItem(){
 
     }
     $container.imagesLoaded( function() {
-       $container.mesonry('appended',elements);
+       $container.masonry('appended',elements);
       });
       
 
