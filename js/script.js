@@ -12,7 +12,8 @@ $.getJSON('./data/content.json',function(data){ //데이타라는 매개 변수�
 $('.gallery').masonry({
     // options
     itemSelector: '.gallery-item',
-    columnWidth: 210
+    columnWidth: 210,
+    gutter:40
   });
 function initGallery(data){
     $allData=data;
