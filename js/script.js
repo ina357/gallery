@@ -6,7 +6,7 @@ let $allData=[]; //배열구조
 
 //$.getJSON('파일경로',할일);
 $.getJSON('./data/content.json',function(data){ //데이타라는 매개 변수를 준다.
-
+    initGallery(data)
 
 });
 function initGallery(data){
